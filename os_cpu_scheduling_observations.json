@@ -1,0 +1,333 @@
+{
+    "experiment": "CPU Scheduling Simulation",
+    "generated_at": "2026-11-19T22:16:25",
+    "note": "Educational simulation only; real OS scheduling is not modified.",
+    "processes": [
+        {
+            "pid": "P1",
+            "arrival": 0,
+            "burst": 7
+        },
+        {
+            "pid": "P2",
+            "arrival": 2,
+            "burst": 4
+        },
+        {
+            "pid": "P3",
+            "arrival": 4,
+            "burst": 1
+        },
+        {
+            "pid": "P4",
+            "arrival": 5,
+            "burst": 4
+        }
+    ],
+    "round_robin_time_quantum": 2,
+    "results": {
+        "FCFS": {
+            "gantt_chart": [
+                {
+                    "start": 0,
+                    "end": 7,
+                    "process": "P1"
+                },
+                {
+                    "start": 7,
+                    "end": 11,
+                    "process": "P2"
+                },
+                {
+                    "start": 11,
+                    "end": 12,
+                    "process": "P3"
+                },
+                {
+                    "start": 12,
+                    "end": 16,
+                    "process": "P4"
+                }
+            ],
+            "process_metrics": [
+                {
+                    "process": "P1",
+                    "arrival_time": 0,
+                    "burst_time": 7,
+                    "completion_time": 7,
+                    "turnaround_time": 7,
+                    "waiting_time": 0,
+                    "response_time": 0
+                },
+                {
+                    "process": "P2",
+                    "arrival_time": 2,
+                    "burst_time": 4,
+                    "completion_time": 11,
+                    "turnaround_time": 9,
+                    "waiting_time": 5,
+                    "response_time": 5
+                },
+                {
+                    "process": "P3",
+                    "arrival_time": 4,
+                    "burst_time": 1,
+                    "completion_time": 12,
+                    "turnaround_time": 8,
+                    "waiting_time": 7,
+                    "response_time": 7
+                },
+                {
+                    "process": "P4",
+                    "arrival_time": 5,
+                    "burst_time": 4,
+                    "completion_time": 16,
+                    "turnaround_time": 11,
+                    "waiting_time": 7,
+                    "response_time": 7
+                }
+            ],
+            "averages": {
+                "average_waiting_time": 4.75,
+                "average_turnaround_time": 8.75,
+                "average_response_time": 4.75
+            }
+        },
+        "SJF_Non_Preemptive": {
+            "gantt_chart": [
+                {
+                    "start": 0,
+                    "end": 7,
+                    "process": "P1"
+                },
+                {
+                    "start": 7,
+                    "end": 8,
+                    "process": "P3"
+                },
+                {
+                    "start": 8,
+                    "end": 12,
+                    "process": "P2"
+                },
+                {
+                    "start": 12,
+                    "end": 16,
+                    "process": "P4"
+                }
+            ],
+            "process_metrics": [
+                {
+                    "process": "P1",
+                    "arrival_time": 0,
+                    "burst_time": 7,
+                    "completion_time": 7,
+                    "turnaround_time": 7,
+                    "waiting_time": 0,
+                    "response_time": 0
+                },
+                {
+                    "process": "P2",
+                    "arrival_time": 2,
+                    "burst_time": 4,
+                    "completion_time": 12,
+                    "turnaround_time": 10,
+                    "waiting_time": 6,
+                    "response_time": 6
+                },
+                {
+                    "process": "P3",
+                    "arrival_time": 4,
+                    "burst_time": 1,
+                    "completion_time": 8,
+                    "turnaround_time": 4,
+                    "waiting_time": 3,
+                    "response_time": 3
+                },
+                {
+                    "process": "P4",
+                    "arrival_time": 5,
+                    "burst_time": 4,
+                    "completion_time": 16,
+                    "turnaround_time": 11,
+                    "waiting_time": 7,
+                    "response_time": 7
+                }
+            ],
+            "averages": {
+                "average_waiting_time": 4.0,
+                "average_turnaround_time": 8.0,
+                "average_response_time": 4.0
+            }
+        },
+        "SJF_Preemptive_SRTF": {
+            "gantt_chart": [
+                {
+                    "start": 0,
+                    "end": 2,
+                    "process": "P1"
+                },
+                {
+                    "start": 2,
+                    "end": 4,
+                    "process": "P2"
+                },
+                {
+                    "start": 4,
+                    "end": 5,
+                    "process": "P3"
+                },
+                {
+                    "start": 5,
+                    "end": 7,
+                    "process": "P2"
+                },
+                {
+                    "start": 7,
+                    "end": 11,
+                    "process": "P4"
+                },
+                {
+                    "start": 11,
+                    "end": 16,
+                    "process": "P1"
+                }
+            ],
+            "process_metrics": [
+                {
+                    "process": "P1",
+                    "arrival_time": 0,
+                    "burst_time": 7,
+                    "completion_time": 16,
+                    "turnaround_time": 16,
+                    "waiting_time": 9,
+                    "response_time": 0
+                },
+                {
+                    "process": "P2",
+                    "arrival_time": 2,
+                    "burst_time": 4,
+                    "completion_time": 7,
+                    "turnaround_time": 5,
+                    "waiting_time": 1,
+                    "response_time": 0
+                },
+                {
+                    "process": "P3",
+                    "arrival_time": 4,
+                    "burst_time": 1,
+                    "completion_time": 5,
+                    "turnaround_time": 1,
+                    "waiting_time": 0,
+                    "response_time": 0
+                },
+                {
+                    "process": "P4",
+                    "arrival_time": 5,
+                    "burst_time": 4,
+                    "completion_time": 11,
+                    "turnaround_time": 6,
+                    "waiting_time": 2,
+                    "response_time": 2
+                }
+            ],
+            "averages": {
+                "average_waiting_time": 3.0,
+                "average_turnaround_time": 7.0,
+                "average_response_time": 0.5
+            }
+        },
+        "Round_Robin": {
+            "gantt_chart": [
+                {
+                    "start": 0,
+                    "end": 2,
+                    "process": "P1"
+                },
+                {
+                    "start": 2,
+                    "end": 4,
+                    "process": "P2"
+                },
+                {
+                    "start": 4,
+                    "end": 6,
+                    "process": "P1"
+                },
+                {
+                    "start": 6,
+                    "end": 7,
+                    "process": "P3"
+                },
+                {
+                    "start": 7,
+                    "end": 9,
+                    "process": "P2"
+                },
+                {
+                    "start": 9,
+                    "end": 11,
+                    "process": "P4"
+                },
+                {
+                    "start": 11,
+                    "end": 13,
+                    "process": "P1"
+                },
+                {
+                    "start": 13,
+                    "end": 15,
+                    "process": "P4"
+                },
+                {
+                    "start": 15,
+                    "end": 16,
+                    "process": "P1"
+                }
+            ],
+            "process_metrics": [
+                {
+                    "process": "P1",
+                    "arrival_time": 0,
+                    "burst_time": 7,
+                    "completion_time": 16,
+                    "turnaround_time": 16,
+                    "waiting_time": 9,
+                    "response_time": 0
+                },
+                {
+                    "process": "P2",
+                    "arrival_time": 2,
+                    "burst_time": 4,
+                    "completion_time": 9,
+                    "turnaround_time": 7,
+                    "waiting_time": 3,
+                    "response_time": 0
+                },
+                {
+                    "process": "P3",
+                    "arrival_time": 4,
+                    "burst_time": 1,
+                    "completion_time": 7,
+                    "turnaround_time": 3,
+                    "waiting_time": 2,
+                    "response_time": 2
+                },
+                {
+                    "process": "P4",
+                    "arrival_time": 5,
+                    "burst_time": 4,
+                    "completion_time": 15,
+                    "turnaround_time": 10,
+                    "waiting_time": 6,
+                    "response_time": 4
+                }
+            ],
+            "averages": {
+                "average_waiting_time": 5.0,
+                "average_turnaround_time": 9.0,
+                "average_response_time": 1.5
+            }
+        }
+    }
+}

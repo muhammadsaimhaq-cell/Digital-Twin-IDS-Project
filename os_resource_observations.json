@@ -1,0 +1,16 @@
+{
+  "before_training": {
+    "cpu_percent": 38.0,
+    "memory_percent": 76.9,
+    "process_memory_mb": 198.13,
+    "process_threads": 15
+  },
+  "after_training": {
+    "cpu_percent": 27.1,
+    "memory_percent": 76.0,
+    "process_memory_mb": 214.1,
+    "process_threads": 15
+  },
+  "python_process_id": 18476,
+  "note": "Resource readings are observations from this machine and run."
+}

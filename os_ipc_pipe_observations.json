@@ -1,0 +1,19 @@
+{
+    "experiment": "Inter-Process Communication (IPC) using Pipe",
+    "timestamp": "2026-11-19T22:12:27",
+    "communication_method": "multiprocessing.Pipe",
+    "parent_process_id": 12768,
+    "child_process_id": 6952,
+    "child_exit_code": 0,
+    "message_received_by_parent": {
+        "source_process": "child_process",
+        "event": "simulated_sensor_status",
+        "water_level_percent": 48.5,
+        "pump_status": "ON",
+        "valve_status": "OFF",
+        "label": "normal"
+    },
+    "communication_successful": true,
+    "total_elapsed_time_seconds": 0.9725,
+    "observation": "The child process sent a simulated sensor-status message to the parent process through a pipe."
+}

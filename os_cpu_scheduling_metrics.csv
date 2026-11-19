@@ -1,0 +1,17 @@
+algorithm,process,arrival_time,burst_time,completion_time,turnaround_time,waiting_time,response_time
+FCFS,P1,0,7,7,7,0,0
+FCFS,P2,2,4,11,9,5,5
+FCFS,P3,4,1,12,8,7,7
+FCFS,P4,5,4,16,11,7,7
+SJF_Non_Preemptive,P1,0,7,7,7,0,0
+SJF_Non_Preemptive,P2,2,4,12,10,6,6
+SJF_Non_Preemptive,P3,4,1,8,4,3,3
+SJF_Non_Preemptive,P4,5,4,16,11,7,7
+SJF_Preemptive_SRTF,P1,0,7,16,16,9,0
+SJF_Preemptive_SRTF,P2,2,4,7,5,1,0
+SJF_Preemptive_SRTF,P3,4,1,5,1,0,0
+SJF_Preemptive_SRTF,P4,5,4,11,6,2,2
+Round_Robin,P1,0,7,16,16,9,0
+Round_Robin,P2,2,4,9,7,3,0
+Round_Robin,P3,4,1,7,3,2,2
+Round_Robin,P4,5,4,15,10,6,4

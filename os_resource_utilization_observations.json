@@ -1,0 +1,27 @@
+{
+    "experiment": "OS Resource Utilization Analysis",
+    "generated_at": "2026-11-19T22:20:02",
+    "note": "Measurements are machine- and run-specific snapshots. The workload is a safe software simulation only.",
+    "before_workload": {
+        "timestamp": "2026-11-19T22:20:01",
+        "system_cpu_percent": 54.6,
+        "system_ram_percent": 75.4,
+        "system_ram_used_mb": 6086.66,
+        "python_process_memory_mb": 29.11,
+        "python_process_threads": 6
+    },
+    "after_workload": {
+        "timestamp": "2026-11-19T22:20:02",
+        "system_cpu_percent": 0.8,
+        "system_ram_percent": 75.4,
+        "system_ram_used_mb": 6084.63,
+        "python_process_memory_mb": 29.12,
+        "python_process_threads": 6
+    },
+    "execution_time_seconds": 0.302122,
+    "workload_result": {
+        "simulation_steps": 300000,
+        "final_simulated_water_level_percent": 80.0,
+        "average_calculated_level": 79.952
+    }
+}

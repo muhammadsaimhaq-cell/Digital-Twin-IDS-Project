@@ -1,0 +1,22 @@
+{
+  "dataset_records": 3000,
+  "normal_records": 2238,
+  "anomaly_records": 762,
+  "feature_columns": [
+    "true_water_level",
+    "sensor_water_level",
+    "pump_state",
+    "valve_state",
+    "command_mismatch",
+    "network_delay_ms",
+    "water_level_change"
+  ],
+  "random_seed": 42,
+  "test_size": 0.25,
+  "models": [
+    "Logistic Regression",
+    "Decision Tree",
+    "K-Nearest Neighbors (KNN)"
+  ],
+  "results_folder": "C:\\Users\\LAPTOOL TECHNOLOGY\\OneDrive\\Desktop\\saim\\dt_ids_results"
+}

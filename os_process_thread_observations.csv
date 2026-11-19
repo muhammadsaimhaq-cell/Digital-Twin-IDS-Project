@@ -1,0 +1,6 @@
+Component,Identifier,Observation
+Main process,PID,11760
+Child process,PID,9136
+Child process,Parent PID,11760
+Thread,Demo-Thread-2,Thread ID=10128; Task time=1.0005 seconds
+Thread,Demo-Thread-1,Thread ID=12064; Task time=1.0011 seconds

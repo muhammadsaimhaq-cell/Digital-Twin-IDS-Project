@@ -1,0 +1,31 @@
+{
+  "experiment": "OS/Runtime - Process and Thread Demonstration",
+  "main_process_id": 11760,
+  "child_process_id": 9136,
+  "child_process_parent_id": 11760,
+  "child_process_message": "Child process completed its safe demo task.",
+  "child_process_elapsed_seconds": 0.1656,
+  "threads_created": 2,
+  "thread_details": [
+    {
+      "thread_name": "Demo-Thread-2",
+      "thread_number": 2,
+      "thread_id": 10128,
+      "task_time_seconds": 1.0005
+    },
+    {
+      "thread_name": "Demo-Thread-1",
+      "thread_number": 1,
+      "thread_id": 12064,
+      "task_time_seconds": 1.0011
+    }
+  ],
+  "threads_elapsed_seconds": 1.002,
+  "resource_observations": {
+    "cpu_percent": 23.2,
+    "system_memory_percent": 75.3,
+    "python_process_memory_mb": 29.36,
+    "active_threads_after_demo": 6
+  },
+  "note": "A child process was launched and two threads were run inside the main Python process. The child process communicated its result to the parent through captured standard output."
+}

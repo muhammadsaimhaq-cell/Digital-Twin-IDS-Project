@@ -1,0 +1,8 @@
+Metric,Value
+Communication method,multiprocessing.Pipe
+Parent process ID,12768
+Child process ID,6952
+Child exit code,0
+Message received,"{""source_process"": ""child_process"", ""event"": ""simulated_sensor_status"", ""water_level_percent"": 48.5, ""pump_status"": ""ON"", ""valve_status"": ""OFF"", ""label"": ""normal""}"
+Communication successful,True
+Elapsed time (seconds),0.9725
